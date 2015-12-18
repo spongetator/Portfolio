@@ -1,93 +1,199 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* ======= Base ======= */
+body {
+    font-family: 'Lato', arial, sans-serif;
+    color: #444444;
+}
+a {
+    color: #286da8;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+a:hover {
+    text-decoration: none;
+    color: #1e527f;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.offset-header {
+    padding-top: 90px;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.has-pattern {
+    background-image: url('../images/pattern-1.png');
+    background-repeat: repeat;
+    background-position: left top;
 }
-body {
-  line-height: 1;
+
+/* ======= Header ======= */
+.header {
+    padding: 15px 0;
+    background: #fff;
+    z-index: 9999;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
 }
-ol, ul {
-  list-style: none;
+.header h1.logo {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 28px;
+    max-height: 50px;
 }
-blockquote, q {
-  quotes: none;
+.header h1.logo a {
+    color: #444444;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
+.header h1.logo a img {
+    margin-right: 5px;
+    max-height: 50px;
 }
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.header .main-nav button {
+    background: #0b1d2c;
+    color: #fff !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
 }
-body {
-  font-family: 'Roboto', sans-serif; 
-  font-size: 16px; 
-  color: #838994; 
-  letter-spacing: 0.03em;
-    background-color: LightGray;
+.header .main-nav button:focus {
+    outline: none;
 }
-div {
-    border: 1px solid Chocolate;
-}
-/* Navigation Section */
-.top-navigation {
+.header .main-nav button .icon-bar {
     background-color: #fff;
 }
-.top-navigation > .content {
-    width: 970px;
-    height: 70px;
-    margin: 0 auto;
+.header .main-nav .nav .nav-item {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-right: 10px;
 }
-.masthead-heading,
-.masthead-intro {
-    text-align: center;
+.header .main-nav .nav .nav-item.active a {
+    color: #286da8;
+    background: none;
 }
-.masthead {
-  width: 100%;
-  height:25%;
-  
-    padding: 6em 0;
+.header .main-nav .nav .nav-item a {
+    color: #444444;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+.header .main-nav .nav .nav-item a:hover {
+    color: #286da8;
+    background: none;
+}
+.header .main-nav .nav .nav-item a:focus {
+    outline: none;
+    background: none;
+}
+.header .main-nav .nav .nav-item a:active {
+    outline: none;
+    background: none;
+}
+.header .main-nav .nav .nav-item.active {
+    color: #286da8;
+}
+.header .main-nav .nav .nav-item.last {
+    margin-right: 0;
 }
 
-.masthead-intro {
-    margin-bottom: 0.1em;
+/* ======= Promo Section ======= */
+.promo {
+    background-color: #286da8;
+    color: #fff;
+}
+.promo .container {
+    padding-bottom: 15px;
+}
+.promo .overview {
+    margin-top: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.promo .overview h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+.promo .overview .summary {
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+.promo .overview .summary li {
+    margin-bottom: 15px;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 30px;
+    background: url('../images/bullet.png') no-repeat left center;
+}
+.promo a {
+    color: #fff;
+    text-decoration: underline;
 }
 
-.masthead-heading {
-    margin-top: -0.2em;
+/* ======= Footer ======= */
+.footer {
+    background: #444444;
+    color: #fff;
+    padding: 15px 0;
 }
-.masthead {
-  background-image: url('https://unsplash.imgix.net/reserve/xWcqazwvSXadCA7dZLiQ_Ship_mast.jpg?q=75&fm=jpg&s=166f668db5471c7f022245f6049e5d12');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  margin: 10px;
-  
+.footer .copyright {
+    color: #b3b3b3;
+    margin-right: 15px;
+}
+.footer .links {
+    margin-bottom: 0;
+}
+.footer .links a {
+    color: #808080;
+}
+.footer .links a:hover {
+    color: #286da8;
+}
+
+/* ======= Portfolio Section ======= */
+.faq {
+    padding: 80px 0;
+}
+/* ======= FAQ Section ======= */
+.faq {
+    padding: 80px 0;
+}
+.faq .title {
+    margin-bottom: 60px;
+}
+.faq .item {
+    padding: 30px;
+    background: #f5f5f5;
+    margin-bottom: 30px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border-bottom: 3px solid #87b8e2;
+}
+.faq .item .question {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.faq .item .question .fa {
+    margin-right: 10px;
+    color: #3488cf;
+}
+.faq .item .answer {
+    color: #777777;
+    font-weight: 300;
+}
+.faq img {
+    width: 100%;
+    border: 1px dotted darkslategrey;
 }
