@@ -91,3 +91,31 @@ div {
   margin: 10px;
   
 }
+ul.portfolioItem {width: 100%;}
+ul.portfolioItem li{display: inline-block;
+  list-style: none;
+  border: 1px solid black;
+  width: 20em;} 
+  section {
+    width: 100%;
+    margin: 1.5em;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+p{width: auto: padding: 2em;}
+.portfolioItem h1 {
+    width: 50%;
+    margin: 1.3em;
+    float: right;
+}
+
+.portfolioItem a {
+    width: 50%;
+    float: left;
+}
+
+.portfolioItem img {
+    width: 10em;
+}
