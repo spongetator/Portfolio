@@ -94,9 +94,6 @@ div {
   background-position: 50% 50%;
   margin: 0px;
 }
-.masthead section {
-    width: 35%;
-}
 ul.portfolioItem {width: 100%;}
 ul.portfolioItem li{
   display: inline-block;
